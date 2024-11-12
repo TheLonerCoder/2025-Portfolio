@@ -1,12 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-
-
-
-export const portSlice = createSlice({
-  name: 'portfolio',
-  initialState: {
-      ftf : {
+export let projectArray = [
+     {
         name: 'Forge The Fort',
         logo: 'Thelonercoderportfolio/imgs/Forge-the-Fort.jpg',
         prev: 'Thelonercoderportfolio/imgs/ftf.webp',
@@ -23,13 +16,13 @@ export const portSlice = createSlice({
 
     },
 
-    vrworld: {
+     {
         name: 'VR World',
         logo: 'Thelonercoderportfolio/imgs/VR-WORLD.jpg',
-        prev: 'Thelonercoderportfolio/imgs/progress.png',
+        prev: '',
         gif: '',
-        description: "A fake landing page for a VR-based company. This company specializes in VR and immersive technology and connects it's userbase to the metaverse with music.",
-        tech: ['react', 'vite', 'sass', 'javascript', 'html', 'css'],
+        description: "A fake landing page for a VR-based company. This company specializes in VR and immersive technology and connects it's userbase to the metaverse.",
+        tech: ['react', 'sass', 'javascript', 'html', 'css'],
         apis: {
             used: false,
         },
@@ -40,7 +33,7 @@ export const portSlice = createSlice({
 
     },
 
-    solo: {
+     {
         name: 'Solo Innovations',
         logo: 'Thelonercoderportfolio/imgs/solo.jpg',
         prev: 'Thelonercoderportfolio/imgs/solo.webp',
@@ -50,17 +43,17 @@ export const portSlice = createSlice({
         apis: {
             used: false,
         },
-        demo: 'https://www.solo-innovations.com',
+        demo: '',
         codebase: 'https://github.com/TheLonerCoder/Solo-Innovations',
         founders: '',
         concept: false
 
     },
 
-    worldla: {
+     {
         name: 'Worldla',
         logo: 'Thelonercoderportfolio/imgs/worlda-green.jpg',
-        prev: 'Thelonercoderportfolio/imgs/worldla-prev.webp',
+        prev: '',
         gif: '',
         description: "A platform where you can become more aware of how learning a language opens up doors. It'll give resources to learn languages, show you where you can use them, etc.",
         tech: ['react', 'sass', 'javascript', 'html', 'css'],
@@ -75,10 +68,10 @@ export const portSlice = createSlice({
     },
 
 
-    imhere: {
+     {
         name: "I'm Here",
-        logo: 'Thelonercoderportfolio/imgs/im-here.png',
-        prev: 'Thelonercoderportfolio/imgs/progress.png',
+        logo: '',
+        prev: '',
         gif: '',
         description: "A portal with both a student and teacher can log into and show they're in attendance in their class.",
         tech: ['react', 'bootstrap', 'sass', 'javascript'],
@@ -91,12 +84,4 @@ export const portSlice = createSlice({
         concept: true
 
     }
-  },
-  reducers: {}
-
-})
-
-
-
-export default portSlice.reducer;
-
+]

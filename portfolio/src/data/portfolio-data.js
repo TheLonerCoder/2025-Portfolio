@@ -1,12 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-
-
-
-export const portSlice = createSlice({
-  name: 'portfolio',
-  initialState: {
-      ftf : {
+export let projectObject = {
+    ftf : {
         name: 'Forge The Fort',
         logo: 'Thelonercoderportfolio/imgs/Forge-the-Fort.jpg',
         prev: 'Thelonercoderportfolio/imgs/ftf.webp',
@@ -50,7 +43,7 @@ export const portSlice = createSlice({
         apis: {
             used: false,
         },
-        demo: 'https://www.solo-innovations.com',
+        demo: '',
         codebase: 'https://github.com/TheLonerCoder/Solo-Innovations',
         founders: '',
         concept: false
@@ -91,12 +84,4 @@ export const portSlice = createSlice({
         concept: true
 
     }
-  },
-  reducers: {}
-
-})
-
-
-
-export default portSlice.reducer;
-
+}

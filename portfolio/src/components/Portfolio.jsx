@@ -9,8 +9,8 @@ function Portfolio() {
   const portfolio = useSelector((state) => state.portfolios)
   
   // * Test
-  console.log(portfolio['Solo Innovations'].name)
-  let portTesting = portfolio['Solo Innovations'].name;
+  console.log(portfolio['solo'].name)
+  let portTesting = portfolio['solo'].name;
 
   // TODO Layout Ports
   // TODO 
