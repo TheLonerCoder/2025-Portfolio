@@ -24,7 +24,7 @@ function Bio() {
       <h1 onMouseEnter={nameChange} onMouseLeave={nameChangeBack}>Hello! I'm {name}</h1>
       <h4>I'm a {underName}</h4>
 
-      <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 but recently received my certification from Nucamp (for Full Stack Web Development).</p>
+      <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 and eventually went on to receive my certification from Nucamp (for Full Stack MERN Web Development).</p>
 
       <p>My projects are passion-focused, pertaining to immersive technologies, exoplanets/space, entrepreneurship, learning languages, and music.</p>
 
