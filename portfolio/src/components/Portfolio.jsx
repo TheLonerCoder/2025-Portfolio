@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import '../styles/portfolio.css';
 import { FaGithub, FaDesktop } from "react-icons/fa";
 import { changeProject } from '../data/projectSlice';
+import { GrStatusGood as OnlineIcon, GrStatusCritical as OfflineIcon, GrStatusDisabled as MaintainIcon} from "react-icons/gr";
 
 
 
@@ -118,15 +119,23 @@ function ProjectSelected () {
                 <h2 id="about">About the Project</h2>
                 <p>{portfolio[projectDisplayedID].description}</p>
                 <h2 id="status">Status</h2>
-                <img src="https://placehold.co/200x50" alt="" />
+                {/* <img src="https://placehold.co/200x50" alt="" /> */}
+                <div>
+                {portfolio[projectDisplayedID].demo.length > 0 ? <p><OnlineIcon />Project Online</p>: <p><MaintainIcon />Offline</p>}
+                </div>
                 <h2 id="tech">Technologies Used</h2>
                 <img src="https://placehold.co/50x50" alt="" />
                 <h2 id="apis">APIs Used</h2>
 
-                <div>
-                  <button><FaDesktop /> DEMO</button>
-                  <button><FaGithub /> CODE</button>
-                </div>
+                
+                  {
+                    portfolio[projectDisplayedID].demo.length > 0 ? 
+                    <div>
+                      <button><FaDesktop /> DEMO</button>
+                      <button><FaGithub /> CODE</button>
+                    </div> : 'Project is either under maintenance or in development'
+                  }
+                
               </div>
             </div>
 
