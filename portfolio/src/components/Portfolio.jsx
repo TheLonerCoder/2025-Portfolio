@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import '../styles/portfolio.css';
 import { FaGithub, FaDesktop } from "react-icons/fa";
@@ -84,34 +84,104 @@ function Portfolio() {
 //#region [White]
 
 function ProjectSelected () {
+
+  const projectDisplayedID = useSelector((state) => state.project.selected);
+  const portfolio = useSelector((state) => state.portfolios);
+
+
+  // const [ID, setID] = useState(projectDisplayedID)
+  
+  // const portfolio = useSelector((state) => state.portfolios);
+  
+  // for (const [key, value] of Object.entries(portfolio)) {
+  //   if (key == ID) {
+  //     console.log(value)
+  //   }
+  // }
+
   return (
-    <div id='selectedProject'>
-      <div id='selectedProjectTop'>
-        <img src="https://placehold.co/300x400" alt="" />
-        <div id="projectInfo">
-          <h2 id="about">About the Project</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid maiores architecto nostrum voluptate. Rerum vel ipsa adipisci totam. Suscipit numquam ipsam ratione perferendis totam ut unde nisi fuga et.</p>
-          <h2 id="status">Status</h2>
-          <img src="https://placehold.co/200x50" alt="" />
-          <h2 id="tech">Technologies Used</h2>
-          <img src="https://placehold.co/50x50" alt="" />
-          <h2 id="apis">APIs Used</h2>
+    // <h1>
+    //   {
+    //     projectDisplayedID.length > 0 ? portfolio[projectDisplayedID].name : 'Nothing Selected'
+    //       // return (portfolio[projectDisplayedID].name)
+        
+    //   }
+    // </h1>
+    <div>
 
-          <div>
-            <button><FaDesktop /> DEMO</button>
-            <button><FaGithub /> CODE</button>
+      {
+        projectDisplayedID.length > 0 ? 
+        <div id='selectedProject'>
+            <div id='selectedProjectTop'>
+              <img src="https://placehold.co/300x400" alt="" />
+              <div id="projectInfo">
+                <h2 id="about">About the Project</h2>
+                <p>{portfolio[projectDisplayedID].description}</p>
+                <h2 id="status">Status</h2>
+                <img src="https://placehold.co/200x50" alt="" />
+                <h2 id="tech">Technologies Used</h2>
+                <img src="https://placehold.co/50x50" alt="" />
+                <h2 id="apis">APIs Used</h2>
+
+                <div>
+                  <button><FaDesktop /> DEMO</button>
+                  <button><FaGithub /> CODE</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="selectedProjectBottom">
+              <h1>{portfolio[projectDisplayedID].name}</h1>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div id="selectedProjectBottom">
-        <h1>Title</h1>
-      </div>
+        
+        : <h1>Nothing Selected</h1>
+        
+        
+      }
     </div>
   )
 }
 
 //#endregion
+
+
+// // & Project Selected
+// //#region [White]
+
+// function ProjectSelected () {
+
+//   const projectDisplayedID = useSelector((state) => state.project.selected);
+//   const portfolio = useSelector((state) => state.portfolios);
+
+//   return (
+//     <div id='selectedProject'>
+//       <div id='selectedProjectTop'>
+//         <img src="https://placehold.co/300x400" alt="" />
+//         <div id="projectInfo">
+//           <h2 id="about">About the Project</h2>
+//           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid maiores architecto nostrum voluptate. Rerum vel ipsa adipisci totam. Suscipit numquam ipsam ratione perferendis totam ut unde nisi fuga et.</p>
+//           <h2 id="status">Status</h2>
+//           <img src="https://placehold.co/200x50" alt="" />
+//           <h2 id="tech">Technologies Used</h2>
+//           <img src="https://placehold.co/50x50" alt="" />
+//           <h2 id="apis">APIs Used</h2>
+
+//           <div>
+//             <button><FaDesktop /> DEMO</button>
+//             <button><FaGithub /> CODE</button>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div id="selectedProjectBottom">
+//         <h1>Title</h1>
+//       </div>
+//     </div>
+//   )
+// }
+
+// //#endregion
 
 
 
