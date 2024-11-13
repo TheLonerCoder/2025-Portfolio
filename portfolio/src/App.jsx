@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Bio from './components/Bio'
 import { Portfolio, ProjectSelected } from './components/Portfolio'
+import Background from './components/Background'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,9 @@ function App() {
       <ProjectSelected />
 
       <Portfolio />
+
+
+      <Background />
     </>
   )
 }

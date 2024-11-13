@@ -45,7 +45,7 @@ function Portfolio() {
   return (
     <div id='portfolioDiv'>
       {/* <h2>Portfolio</h2> */}
-      <h2>Project Highlights</h2>
+      {/* <h2>Project Highlights</h2> */}
       {/* <h3>{portTesting}</h3> */}
 
       <div>
@@ -131,7 +131,7 @@ function ProjectSelected () {
                   {
                     portfolio[projectDisplayedID].demo.length > 0 ? 
                     <div>
-                      <button><FaDesktop /> DEMO</button>
+                      <button><a href={portfolio[projectDisplayedID].demo} target='_blank'><FaDesktop /> DEMO</a></button>
                       <button><FaGithub /> CODE</button>
                     </div> : 'Project is either under maintenance or in development'
                   }
@@ -144,7 +144,7 @@ function ProjectSelected () {
             </div>
           </div>
         
-        : <h1>Nothing Selected</h1>
+        : <h1 id='explore'>Explore my Portfolio</h1>
         
         
       }
