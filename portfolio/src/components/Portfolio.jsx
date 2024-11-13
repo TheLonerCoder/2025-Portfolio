@@ -2,13 +2,18 @@ import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import '../styles/portfolio.css';
 import { FaGithub, FaDesktop } from "react-icons/fa";
+import { changeProject } from '../data/projectSlice';
 
 
 
 
+// & Portfolio Component
+//#region [White]
 function Portfolio() {
   
-  const portfolio = useSelector((state) => state.portfolios)
+  const portfolio = useSelector((state) => state.portfolios);
+  const dispatch = useDispatch();
+
   
   // * Test
   console.log(portfolio['solo'].name)
@@ -17,18 +22,25 @@ function Portfolio() {
   for(const[key, value] of Object.entries(portfolio)) {
     console.log(value.name)
   }
-
+  
   // ? Image loads to array
   let logoArray = [];
+
   for(const[key, value] of Object.entries(portfolio)) {
-    logoArray.push(value.logo)
+    logoArray.push({id: key, logo: value.logo})
+  }
+
+  // ? Get ID of project clicked
+  function getID (e) {
+    // console.log(e.target.id);
+    dispatch(changeProject(e.target.id));
   }
   
   
   // TODO Layout Ports
   // TODO 
   // TODO 
-
+  
   return (
     <div id='portfolioDiv'>
       {/* <h2>Portfolio</h2> */}
@@ -36,27 +48,40 @@ function Portfolio() {
       {/* <h3>{portTesting}</h3> */}
 
       <div>
+      
         {
           // for(const[key, value] of Object.entries(portfolio)) {
-          //   console.log(value)
-          // }
+            //   console.log(value)
+            // }
+            
+            // logoArray.map((logo) => {
+            //   return <img src='https://placehold.co/400x250' alt="Image loading failed." className='logoPreview'/>
+            //   // return <img src={logo} alt="Image loading failed." className='logoPreview'/>
+            // })
+            
+            
+          }
 
-          logoArray.map((logo) => {
-            return <img src='https://placehold.co/400x250' alt="Image loading failed." className='logoPreview'/>
-            // return <img src={logo} alt="Image loading failed." className='logoPreview'/>
-          })
-
-
-        }
+          {
+            logoArray.map((project) => {
+              return <img src={project.logo} alt="Image loading failed." className='logoPreview' id={project.id} onClick={getID}/>
+              // return <img src={logo} alt="Image loading failed." className='logoPreview'/>
+            })
+          }
         {/* <img src={portfolio['solo'].logo} alt="Image loading failed." /> */}
         {/* {portfolio} */}
       </div>
     </div>
   )
-
+  
 }
 
+//#endregion
 
+
+
+// & Project Selected
+//#region [White]
 
 function ProjectSelected () {
   return (
@@ -85,5 +110,9 @@ function ProjectSelected () {
     </div>
   )
 }
+
+//#endregion
+
+
 
 export {Portfolio, ProjectSelected};
