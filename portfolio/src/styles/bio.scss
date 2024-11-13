@@ -1,0 +1,48 @@
+#descriptionDiv {
+  display: flex;
+}
+
+
+#linkDiv {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  svg {
+    color: white;
+    // width: 30px;
+    // height: 30px;
+  }
+}
+
+
+
+#bioButtonDiv {
+  // background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  b {
+    svg {
+      // background-color: black;
+      margin-right: 12px;
+    }
+
+
+    // color: orangered;
+    font-size: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
