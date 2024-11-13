@@ -5,4 +5,21 @@
 
 .logoPreview {
   // filter: drop-shadow(-5px 10px 5px white);
+  width: 300px;
+}
+
+
+#selectedProjectTop {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#selectedProjectBottom {
+  background-color: white;
+  color: black;
+  
+  h1 {
+    padding: 5px 0px;
+  }
 }

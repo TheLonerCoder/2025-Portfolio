@@ -32,9 +32,13 @@ function Bio() {
 
       <div id="descriptionDiv">
         <div id="description">
-          <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 and eventually went on to receive my certification from Nucamp (for Full Stack MERN Web Development).</p>
+          <div>
+            <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 and eventually went on to receive my certification from Nucamp (for Full Stack MERN Web Development).</p>
 
-          <p>My projects are passion-focused, pertaining to immersive technologies, exoplanets/space, entrepreneurship, learning languages, and music.</p>
+            <p>My projects are passion-focused, pertaining to immersive technologies, exoplanets/space, entrepreneurship, learning languages, and music.</p>
+          </div>
+
+          <img src="https://placehold.co/300x300" alt="" />
         </div>
 
 
@@ -54,9 +58,9 @@ function Bio() {
       <div>
 
         <div id='bioButtonDiv'>
-          <b><MdEmail /> Email Me</b>
-          <b><IoMdDownload /> Resume</b>
-          <b><FaProjectDiagram /> Projects</b>
+          <button><MdEmail /> Email Me</button>
+          <button><IoMdDownload /> Resume</button>
+          <button><FaProjectDiagram /> Projects</button>
         </div>
       </div>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import '../styles/portfolio.css';
-
+import { FaGithub, FaDesktop } from "react-icons/fa";
 
 
 
@@ -42,7 +42,8 @@ function Portfolio() {
           // }
 
           logoArray.map((logo) => {
-            return <img src={logo} alt="Image loading failed." className='logoPreview'/>
+            return <img src='https://placehold.co/400x250' alt="Image loading failed." className='logoPreview'/>
+            // return <img src={logo} alt="Image loading failed." className='logoPreview'/>
           })
 
 
@@ -55,4 +56,34 @@ function Portfolio() {
 
 }
 
-export default Portfolio;
+
+
+function ProjectSelected () {
+  return (
+    <div id='selectedProject'>
+      <div id='selectedProjectTop'>
+        <img src="https://placehold.co/300x400" alt="" />
+        <div id="projectInfo">
+          <h2 id="about">About the Project</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid maiores architecto nostrum voluptate. Rerum vel ipsa adipisci totam. Suscipit numquam ipsam ratione perferendis totam ut unde nisi fuga et.</p>
+          <h2 id="status">Status</h2>
+          <img src="https://placehold.co/200x50" alt="" />
+          <h2 id="tech">Technologies Used</h2>
+          <img src="https://placehold.co/50x50" alt="" />
+          <h2 id="apis">APIs Used</h2>
+
+          <div>
+            <button><FaDesktop /> DEMO</button>
+            <button><FaGithub /> CODE</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="selectedProjectBottom">
+        <h1>Title</h1>
+      </div>
+    </div>
+  )
+}
+
+export {Portfolio, ProjectSelected};
