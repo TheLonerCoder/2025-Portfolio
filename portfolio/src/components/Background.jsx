@@ -26,7 +26,7 @@ function Background() {
         <Slider>
           <Slide index={0}>
             <h3>Introduction to Coding</h3>
-            <p>I started my journey into coding with an Android App Development & Entrepreneurship Bootcamp. At the time, I was heavily invested in learning about entrepreneurship and felt i could get an edge by learning to code.</p>
+            <p>I started my journey into coding with an 8 Week Android App Development & Entrepreneurship Bootcamp (One Summer Chicago - St. Sabina). At the time, I was heavily invested in learning about entrepreneurship and felt i could get an edge by learning to code.</p>
           </Slide>
           <Slide index={1}>
             <h3>Python</h3>
@@ -52,9 +52,9 @@ function Background() {
         <ButtonNext>Next</ButtonNext>
     </CarouselProvider>
 
-        <h2>St. Sabina (8 Week Program - 2019)</h2>
+        {/* <h2>St. Sabina (8 Week Program - 2019)</h2>
         <p>Android App Development & Entrepreneurship</p>
-     
+      */}
     </div>
   )
 }

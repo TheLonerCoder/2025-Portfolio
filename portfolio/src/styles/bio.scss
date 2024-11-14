@@ -1,3 +1,5 @@
+@use "./colors.scss" as *;
+
 #descriptionDiv {
   display: flex;
 
@@ -25,6 +27,12 @@
     color: white;
     // width: 30px;
     // height: 30px;
+
+    &:hover {
+      // color: orangered;
+      color: $pro2orange;
+      cursor: pointer;
+    }
   }
 }
 
