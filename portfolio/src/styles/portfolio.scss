@@ -88,3 +88,33 @@
     margin-right: 5px;
   }
 }
+
+
+#linkButtonDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkButton {
+  color: $pro3white;
+  // justify-content: space-between;
+  font-size: 20px;
+  margin-right: 10px;
+
+  svg {
+    margin-right: 8px;
+  }
+  
+  a {
+    color: $pro3white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &:hover {
+    border-color: $pro2orange;
+  }
+}

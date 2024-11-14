@@ -131,9 +131,9 @@ function ProjectSelected () {
                 
                   {
                     portfolio[projectDisplayedID].demo.length > 0 ? 
-                    <div>
-                      <button><a href={portfolio[projectDisplayedID].demo} target='_blank'><FaDesktop /> DEMO</a></button>
-                      <button><FaGithub /> CODE</button>
+                    <div id='linkButtonDiv'>
+                      <button className='linkButton'><a href={portfolio[projectDisplayedID].demo} target='_blank'><FaDesktop /> DEMO</a></button>
+                      <button className='linkButton'><FaGithub /> CODE</button>
                     </div> : 'Project is either under maintenance or in development'
                   }
                 
