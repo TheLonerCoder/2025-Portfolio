@@ -26,19 +26,20 @@ function Bio() {
   return (
     <div>
       <div id="heading">
-        <h1 onMouseEnter={nameChange} onMouseLeave={nameChangeBack}>Hello! I'm {name}</h1>
+        <h1 onMouseEnter={nameChange} onMouseLeave={nameChangeBack}>Hello! I'm <span className='highlights' id='name'>{name}</span></h1>
         <h4>I'm a {underName}</h4>
       </div>
 
       <div id="descriptionDiv">
         <div id="description">
-          <div>
-            <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 and eventually went on to receive my certification from Nucamp (for Full Stack MERN Web Development).</p>
+          <div id='me' className='innerText'>
+            <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 and eventually went on to receive my <span className='highlights'>certification from Nucamp</span> (for Full Stack MERN Web Development).</p>
 
             <p>My projects are passion-focused, pertaining to immersive technologies, exoplanets/space, entrepreneurship, learning languages, and music.</p>
           </div>
 
-          <img src="https://placehold.co/300x300" alt="" />
+          {/* <img src="https://placehold.co/300x300" alt="" /> */}
+          <img src="../../public/imgs/portrait.png" alt="" id='portrait'/>
         </div>
 
 
@@ -58,9 +59,9 @@ function Bio() {
       <div>
 
         <div id='bioButtonDiv'>
-          <button><MdEmail /> Email Me</button>
-          <button><IoMdDownload /> Resume</button>
-          <button><FaProjectDiagram /> Projects</button>
+          <button className='highlightButtons'><MdEmail /> <span>Email Me</span></button>
+          <button className='highlightButtons'><IoMdDownload /> <span>Resume</span></button>
+          <button className='highlightButtons'><FaProjectDiagram /> <span>Projects</span></button>
         </div>
       </div>
 

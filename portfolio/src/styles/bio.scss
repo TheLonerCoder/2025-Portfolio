@@ -1,11 +1,60 @@
 @use "./colors.scss" as *;
 
+
+
+#name, .highlights {
+  color: $pro2orange;
+}
+
+#portrait {
+  // width: 300px;
+  height: 300px;
+  // transform: ;
+  // box-shadow: 1px 1px 1px red;
+  filter: drop-shadow(1px 1px 1px $pro2blue);
+  // filter: drop-shadow(1px 1px 1px red);
+  border-radius: 50%;
+  
+}
+
+
+.highlightButtons {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // justify-content: space-between;
+  font-size: 20px;
+  
+
+  svg {
+    margin-right: 8px;
+  }
+
+  
+  &:hover {
+    border-color: $pro2orange;
+    // color: rgba($color: $pro2orange, $alpha: 0.1);
+  }
+}
+
+
+
 #descriptionDiv {
   display: flex;
 
   #description {
     display: flex;
     flex-direction: row;
+
+    // #me {
+    //   // background-color: $grey;
+    //   padding: 10px 50px;
+
+    //   p{
+    //     text-align: left;
+    //   }
+    // }
   }
 }
 
@@ -42,20 +91,25 @@
   // background-color: green;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
+  // justify-content: center;
+  // align-items: start;
 
-  b {
+  button {
+
+    
     svg {
       // background-color: black;
       margin-right: 12px;
     }
-
-
+    
+    
+    margin-right: 20px;
     // color: orangered;
-    font-size: 20px;
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    // font-size: 20px;
+    // width: 200px;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
   }
 }

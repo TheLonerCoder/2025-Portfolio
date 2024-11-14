@@ -117,7 +117,7 @@ function ProjectSelected () {
               <img src="https://placehold.co/300x400" alt="" />
               <div id="projectInfo">
                 <h2 id="about">About the Project</h2>
-                <p>{portfolio[projectDisplayedID].description}</p>
+                <p className='innerText'>{portfolio[projectDisplayedID].description}</p>
                 <h2 id="status">Status</h2>
                 {/* <img src="https://placehold.co/200x50" alt="" /> */}
                 <div>
