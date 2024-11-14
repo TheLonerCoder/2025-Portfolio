@@ -24,10 +24,12 @@ function Bio() {
   }
 
   return (
-    <div>
+    <div id='bioDiv'>
+      <div id='bioTop'>
+
       <div id="heading">
         <h1 onMouseEnter={nameChange} onMouseLeave={nameChangeBack}>Hello! I'm <span className='highlights' id='name'>{name}</span></h1>
-        <h4>I'm a {underName}</h4>
+        <h2 id='undername'>I'm a {underName}</h2>
       </div>
 
       <div id="descriptionDiv">
@@ -39,21 +41,22 @@ function Bio() {
           </div>
 
           {/* <img src="https://placehold.co/300x300" alt="" /> */}
-          <img src="../../public/imgs/portrait.png" alt="" id='portrait'/>
+          <img src="../../public/imgs/portrait.png" alt="" id='portrait' className='popout'/>
         </div>
 
 
         <div id='linkDiv'>
           {/* <a href=""><GithubCircle size={40}/> </a> */}
-          <a href=""><FaGithub size={32}/> </a>
-          <a href=""><YoutubeCircle size={40}/> </a>
-          <a href=""><LinkedCircle size={40}/> </a>
+          <a href="" className='popout' id='gitLogo'><FaGithub size={32}/> </a>
+          <a href="" className='popout'><YoutubeCircle size={40}/> </a>
+          <a href="" className='popout'><LinkedCircle size={40}/> </a>
           {/* <a href=""><FaYoutube size={30}/> </a> */}
           {/* <a href=""><FaLinkedin size={30}/> </a> */}
           {/* <a href=""><FaGithub /> Github</a>
           <a href=""><FaYoutube /> Youtube</a>
           <a href=""><FaLinkedin /> Indeed</a> */}
         </div>
+      </div>
       </div>
 
       <div>

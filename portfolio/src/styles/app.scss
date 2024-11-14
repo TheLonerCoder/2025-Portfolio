@@ -1,12 +1,22 @@
 @use './colors.scss' as *;
 
 
+
+
 #root {
+  
+
   // background-color: white;
-  background-color: $grey;
+  // background-color: $grey;
+  // background-color: $pro2greyblue;
+  // background-color: red;
   max-width: 1280px;
+  // padding: 50px;
   margin: 0 auto;
-  padding: 2rem;
+  // padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
