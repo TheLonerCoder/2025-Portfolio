@@ -11,7 +11,7 @@ function Background() {
       <h1>Education & Background</h1>
 
       <h2>Certifications</h2>
-      <a href="../../public/imgs/NucampCert.pdf" target='_blank'><img src="../../public/imgs/cert.webp" alt="" id='cert'/></a>
+      <a href="/imgs/NucampCert.pdf" target='_blank'><img src="../../public/imgs/cert.webp" alt="" id='cert'/></a>
       <h2>Nucamp</h2>
       <p>(Full Stack & Mobile Development)</p>
 
