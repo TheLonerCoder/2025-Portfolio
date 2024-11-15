@@ -65,7 +65,7 @@ function Portfolio() {
 
           {
             logoArray.map((project) => {
-              return <img src={project.logo} alt="Image loading failed." className='logoPreview' id={project.id} onClick={getID}/>
+              return <img src={project.logo} alt="Image loading failed." className='logoPreview popout' id={project.id} onClick={getID}/>
               // return <img src={logo} alt="Image loading failed." className='logoPreview'/>
             })
           }
@@ -108,10 +108,12 @@ function ProjectSelected () {
         
     //   }
     // </h1>
-    <div id='projectDiv'>
+    <div>
 
       {
         projectDisplayedID.length > 0 ? 
+        <div id='projectDiv'>
+
         <div id='selectedProject'>
             <div id='selectedProjectTop'>
               {/* <img src="https://placehold.co/300x400" alt="" /> */}
@@ -144,6 +146,8 @@ function ProjectSelected () {
               <h1 id='projectTitle'>{portfolio[projectDisplayedID].name}</h1>
             </div>
           </div>
+        </div>
+
         
         : <h1 id='explore'>Explore my Portfolio</h1>
         

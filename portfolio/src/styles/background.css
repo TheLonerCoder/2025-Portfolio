@@ -1,1 +1,1 @@
-#cert{width:300px}
+#cert{width:300px;border:5px solid;border-color:rgba(0,0,0,0)}#cert:hover{cursor:pointer;border-color:#ff4c29}#certDiv a{color:#eee}#certDiv a:hover{color:#ff4c29}#certDiv p{font-style:italic}#education{display:flex;flex-direction:row;justify-content:space-evenly;background-color:#686d76;border-radius:0px 15px 0px 0px}#background{width:100%}

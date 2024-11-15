@@ -1,6 +1,51 @@
+@use "./colors.scss" as *;
+
+
+
 #cert {
   // width: 30%;
   // max-width: 300px;
   width: 300px;
   // box-shadow: 1px 1px 1px red;
+  border: 5px solid;
+  border-color: rgba($color: #000000, $alpha: 0);
+
+  &:hover {
+    cursor: pointer;
+    border-color: $pro2orange;
+  }
+}
+
+#certDiv {
+
+  a {
+    color: $pro3white;
+
+    &:hover {
+      color: $pro2orange;
+    }
+  }
+
+  p {
+    // color: $pro2orange;
+    font-style: italic;
+  }
+}
+
+
+#education {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  // align-items: start;
+  background-color: $pro3grey;
+  border-radius: 0px 15px 0px 0px ;
+  // width: 100%;
+
+}
+
+
+#background {
+  width: 100%;
+  // background-color: ;
 }
