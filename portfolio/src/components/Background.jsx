@@ -14,7 +14,7 @@ function Background() {
       <div id="education">
         <div id='certDiv'>
           <h2>Certifications</h2>
-          <a href="../../public/imgs/NucampCert.pdf" target='_blank'><img src="../../public/imgs/cert.webp" alt="" id='cert' className='popout'/></a>
+          <a href="/imgs/NucampCert.pdf" target='_blank'><img src="/imgs/cert.webp" alt="" id='cert' className='popout'/></a>
           <h2><a href="https://www.nucamp.co/">Nucamp</a></h2>
           <p>(Full Stack & Mobile Development)</p>
         </div>

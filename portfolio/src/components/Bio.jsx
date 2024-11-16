@@ -41,7 +41,7 @@ function Bio() {
           </div>
 
           {/* <img src="https://placehold.co/300x300" alt="" /> */}
-          <img src="../../public/imgs/portrait.png" alt="" id='portrait' className='popout'/>
+          <img src="/imgs/portrait.png" alt="" id='portrait' className='popout'/>
         </div>
 
 
