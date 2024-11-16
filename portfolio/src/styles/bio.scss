@@ -1,6 +1,16 @@
 @use "./colors.scss" as *;
 
 
+
+#certLink {
+
+
+  &:hover {
+    cursor: pointer;
+    color: $pro2orange;
+  }
+}
+
 #bioDiv {
   margin-bottom: 50px;
   // width: 50%;

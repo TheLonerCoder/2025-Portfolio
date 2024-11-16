@@ -119,13 +119,13 @@ function ProjectSelected () {
               {/* <img src="https://placehold.co/300x400" alt="" /> */}
               <img src={portfolio[projectDisplayedID].prev} alt=""  className='projectPreview'/>
               <div id="projectInfo">
-                <h2 id="about">About the Project</h2>
+                <h2 id="about" className='headings'>About the Project</h2>
                 <p className='innerText'>{portfolio[projectDisplayedID].description}</p>
-                <h2 id="tech">Technologies Used</h2>
+                <h2 id="tech" className='headings'>Technologies Used</h2>
                 <img src="https://placehold.co/50x50" alt="" />
-                <h2 id="apis">APIs Used</h2>
+                <h2 id="apis" className='headings'>APIs Used</h2>
 
-                <h2 id="status">Status</h2>
+                <h2 id="status" className='headings'>Status</h2>
                 {/* <img src="https://placehold.co/200x50" alt="" /> */}
                 <div>
                 {portfolio[projectDisplayedID].demo.length > 0 ? <p id='online' className='statusBox'><OnlineIcon />Project Online</p>: <p id='offline' className='statusBox'><MaintainIcon />Offline</p>}

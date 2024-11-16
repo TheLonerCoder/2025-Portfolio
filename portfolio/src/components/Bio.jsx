@@ -35,7 +35,7 @@ function Bio() {
       <div id="descriptionDiv">
         <div id="description">
           <div id='me' className='innerText'>
-            <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 and eventually went on to receive my <span className='highlights'>certification from Nucamp</span> (for Full Stack MERN Web Development).</p>
+            <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 and eventually went on to receive my <a href='/imgs/NucampCert.pdf' target='_blank' className='highlights' id='certLink'>certification from Nucamp</a> (for Full Stack MERN Web Development).</p>
 
             <p>My projects are passion-focused, pertaining to immersive technologies, exoplanets/space, entrepreneurship, learning languages, and music.</p>
           </div>
